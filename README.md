@@ -7,6 +7,8 @@
 
 [![Dependency Status](https://img.shields.io/david/ReactJSResources/react-webpack-babel.svg)](https://david-dm.org/dylang/npm-check)
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify? This is for you!
 
 ### What were using
@@ -17,7 +19,7 @@ Tired of complicated starters with 200MB of dependencies which are hard to under
 * SASS
 * Babel Cli
 * Hot Module Reloading
-* Jest 21 
+* Jest 21
 * Enzyme 3 for testing
 
 ### Features
@@ -40,19 +42,19 @@ git clone https://github.com/ReactJSResources/react-webpack-babel.git
 * Then install the dependencies:
 
 ```
-npm install
+yarn install
 ```
 
 * Run development server:
 
 ```
-npm start
+yarn start
 ```
 
 * Or you can run development server with [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard):
 
 ```
-npm run dev
+yarn dev
 ```
 
 Open the web browser to `http://localhost:8888/`
@@ -61,7 +63,7 @@ Open the web browser to `http://localhost:8888/`
 To run unit tests:
 
 ```
-npm test
+yarn test
 ```
 
 Tests come bundled with:
@@ -74,7 +76,7 @@ Tests come bundled with:
 ### To build the production package
 
 ```
-npm run build
+yarn build
 ```
 
 ### Running build locally
@@ -91,35 +93,50 @@ Here is an example Nginx config:
 
 ```
 server {
-	# ... root and other options
+  # ... root and other options
 
-	gzip on;
-	gzip_http_version 1.1;
-	gzip_types text/plain text/css text/xml application/javascript image/svg+xml;
+  gzip on;
+  gzip_http_version 1.1;
+  gzip_types text/plain text/css text/xml application/javascript image/svg+xml;
 
-	location / {
-		try_files $uri $uri/ /index.html;
-	}
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
 
-	location ~ \.html?$ {
-		expires 1d;
-	}
+  location ~ \.html?$ {
+    expires 1d;
+  }
 
-	location ~ \.(svg|ttf|js|css|svgz|eot|otf|woff|jpg|jpeg|gif|png|ico)$ {
-		access_log off;
-		log_not_found off;
-		expires max;
-	}
+  location ~ \.(svg|ttf|js|css|svgz|eot|otf|woff|jpg|jpeg|gif|png|ico)$ {
+    access_log off;
+    log_not_found off;
+    expires max;
+  }
 }
 ```
 
-### Eslint
-There is a `.eslint.yaml` config for eslint ready with React plugin.
+### ESLint
+There is a `.eslintrc` config for eslint ready with React plugin.
 
 To run linting, run:
 
 ```
-npm run lint
+yarn lint
+```
+
+### Prettier
+There is a `.prettierrc` configuration for Prettier.
+
+To prettify code, run:
+
+```
+yarn prettify
+```
+
+To test prettier before changing any files, run:
+
+```
+yarn prettify-test
 ```
 
 ### Notes on importing css styles
