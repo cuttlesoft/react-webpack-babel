@@ -15,21 +15,20 @@ Tired of complicated starters with 200MB of dependencies which are hard to under
 
 ### What were using
 
-* React 16
+* NPM 8
 * Webpack 3
-* React Router 4
-* SASS
-* Babel Cli
-* Hot Module Reloading
-* Jest 21
-* Enzyme 3 for testing
+* React 16
+    * Hot Module Reloading
+    * React Router 4
+* Babel CLI
+* Jest 22
+* Enzyme 3
 
 ### Features
 
-* Simple src/index.jsx and src/index.css (local module css).
+* Simple src/index.jsx.
 * Webpack configuration for development (with hot reloading) and production (with minification).
-* CSS module loading, so you can include your css by ```import styles from './path/to.css';```.
-* Both js(x) and css hot loaded during development.
+* React Hot Loader for live reloading without the loss of state during development.
 * [Webpack Dashboard Plugin](https://github.com/FormidableLabs/webpack-dashboard) on dev server.
 
 ### To run
@@ -140,10 +139,6 @@ To test prettier before changing any files, run:
 ```
 yarn prettify-test
 ```
-
-### Notes on importing css styles
-* styles having /src/ in their absolute path considered part of the application and exported as local css modules.
-* other styles considered global styles used by components and included in the css bundle directly.
 
 ### Contribute
 Please contribute to the project if you know how to make it better, including this README :)
