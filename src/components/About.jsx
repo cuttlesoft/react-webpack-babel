@@ -4,7 +4,7 @@ import dog from '../images/dog.png';
 const About = () => (
   <div>
     Hello
-    <img src={dog} alt="doggo" className="small-img" />
+    <img src={dog} alt="doggo"/>
   </div>
 );
 

@@ -7,19 +7,9 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 /* eslint-enable import/no-extraneous-dependencies */
 
-loaders.push({
-  test: /\.scss$/,
-  loader: ExtractTextPlugin.extract({
-    fallback: 'style-loader',
-    use: 'css-loader?sourceMap&localIdentName=[local]___[hash:base64:5]!sass-loader?outputStyle=expanded',
-  }),
-  exclude: ['node_modules'],
-});
-
 module.exports = {
   entry: [
     './src/index.jsx',
-    './styles/index.scss',
   ],
   output: {
     publicPath: './',
