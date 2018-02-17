@@ -42,15 +42,10 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin({
-      filename: 'style.css',
-      allChunks: true,
-    }),
     new DashboardPlugin(),
     new HtmlWebpackPlugin({
       template: './src/template.html',
       files: {
-        css: ['style.css'],
         js: ['bundle.js'],
       },
     }),

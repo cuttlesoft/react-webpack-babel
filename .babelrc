@@ -4,14 +4,10 @@
     "transform-runtime",
     "transform-decorators-legacy",
     "transform-class-properties",
-    ["module-resolver", {
-      "root": ["./src"],
-      "alias": {
-        "styles": "./styles"
-      }
-    }]
+    "react-hot-loader/babel",
+    "functional-hmr"
   ],
-  
+
   "env": {
     "test": {
       "plugins": [
