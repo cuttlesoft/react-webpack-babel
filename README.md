@@ -13,7 +13,7 @@
 
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify? This is for you!
 
-### What were using
+### What we're using
 
 * NPM 8
 * Webpack 3
