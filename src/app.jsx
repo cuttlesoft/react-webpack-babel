@@ -10,6 +10,7 @@ injectGlobal`
     width: 100vw;
     height: 100vh;
     font-family: sans-serif;
+    margin: 0;
   }
 `;
 /* eslint-enable no-unused-expressions */
@@ -17,9 +18,8 @@ injectGlobal`
 const AppContainer = styled.div`
   background-color: ${theme.background.lighten(0.8)};
   border: solid 4px ${theme.background};
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80vw;
+  margin: 10px auto;
   padding: 10px;
 }
 `;
