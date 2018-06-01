@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const Sample = () => <div>test</div>;
+const Sample = () => <div>test</div>
 
-export default Sample;
+export default Sample

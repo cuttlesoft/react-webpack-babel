@@ -1,9 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import App from './app';
-import About from './components/About';
-import Sample from './components/Sample';
+import App from './app'
+import About from './components/About'
+import Sample from './components/Sample'
 
 const Routes = () => (
   <Router>
@@ -13,6 +13,6 @@ const Routes = () => (
       <Route path="/sample" component={Sample} />
     </div>
   </Router>
-);
+)
 
-export default Routes;
+export default Routes
