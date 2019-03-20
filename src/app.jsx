@@ -1,5 +1,7 @@
 import React from 'react'
 import styled, { injectGlobal, ThemeProvider } from 'styled-components'
+import { Box, Heading, Text } from 'rebass'
+
 import Navigation from './components/Navigation'
 import colors from './colors'
 import theme from './theme'
@@ -35,14 +37,17 @@ const App = () => (
   <ThemeProvider theme={colors}>
     <AppContainer>
       <Navigation />
-      <div>
-        <h1>It Works!</h1>
-        <p>
+
+      <Box>
+        <Heading>It Works!</Heading>
+
+        <Text>
           This React project just works including <Span>module</Span> local
           styles.
-        </p>
-        <p>Enjoy!</p>
-      </div>
+        </Text>
+
+        <Text>Enjoy!</Text>
+      </Box>
     </AppContainer>
   </ThemeProvider>
 )
