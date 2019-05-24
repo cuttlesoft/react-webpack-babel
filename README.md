@@ -1,4 +1,3 @@
-
 <p align="center">
     <h3 align="center">Simple React Webpack Babel Starter Kit<br></h3>
 </p>
@@ -18,8 +17,8 @@ Tired of complicated starters with 200MB of dependencies which are hard to under
 * NPM 8
 * Webpack 3
 * React 16
-    * Hot Module Reloading
-    * React Router 4
+  * Hot Module Reloading
+  * React Router 4
 * Babel CLI
 * Jest 22
 * Enzyme 3
@@ -61,6 +60,7 @@ yarn dev
 Open the web browser to `http://localhost:8888/`
 
 ### To test
+
 To run unit tests:
 
 ```
@@ -117,6 +117,7 @@ server {
 ```
 
 ### ESLint
+
 There is a `.eslintrc` config for eslint ready with React plugin.
 
 To run linting, run:
@@ -126,6 +127,7 @@ yarn lint
 ```
 
 ### Prettier
+
 There is a `.prettierrc` configuration for Prettier.
 
 To prettify code, run:
@@ -141,4 +143,5 @@ yarn prettify-test
 ```
 
 ### Contribute
+
 Please contribute to the project if you know how to make it better, including this README :)

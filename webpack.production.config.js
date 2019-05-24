@@ -1,11 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const webpack = require('webpack');
 const path = require('path');
-const loaders = require('./webpack.loaders');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 /* eslint-enable import/no-extraneous-dependencies */
+
+const rules = require('./webpack.loaders');
 
 module.exports = {
   entry: [
@@ -20,7 +21,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   module: {
-    loaders,
+    rules,
   },
   plugins: [
     new WebpackCleanupPlugin(),

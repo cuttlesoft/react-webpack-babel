@@ -1,11 +1,11 @@
 import React from 'react'
-import styled, { injectGlobal, ThemeProvider } from 'styled-components'
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
 import Navigation from './components/Navigation'
 import colors from './colors'
 import theme from './theme'
 
 /* eslint-disable no-unused-expressions */
-injectGlobal`
+createGlobalStyle`
   body {
     width: 100vw;
     height: 100vh;
