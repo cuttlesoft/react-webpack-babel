@@ -14,47 +14,49 @@ Tired of complicated starters with 200MB of dependencies which are hard to under
 
 ### What we're using
 
-* NPM 8
-* Webpack 3
-* React 16
-  * Hot Module Reloading
-  * React Router 4
-* Babel CLI
-* Jest 22
-* Enzyme 3
+- NPM 8
+- Webpack 3
+- React 16
+  - Hot Module Reloading
+  - React Router 4
+- Babel CLI
+- Jest 22
+- Enzyme 3
 
 ### Features
 
-* Simple src/index.jsx.
-* Webpack configuration for development (with hot reloading) and production (with minification).
-* React Hot Loader for live reloading without the loss of state during development.
-* [Webpack Dashboard Plugin](https://github.com/FormidableLabs/webpack-dashboard) on dev server.
+- Simple src/index.jsx.
+- Webpack configuration for development (with hot reloading) and production (with minification).
+- React Hot Loader for live reloading without the loss of state during development.
+- [Webpack Dashboard Plugin](https://github.com/FormidableLabs/webpack-dashboard) on dev server.
 
 ### To run
 
-* You'll need to have [git](https://git-scm.com/) and [node](https://nodejs.org/en/) installed in your system.
-* Fork and clone the project:
+- You'll need to have [git](https://git-scm.com/) and [node](https://nodejs.org/en/) installed in your system.
+- Fork and clone the project:
 
 ```
 git clone https://github.com/ReactJSResources/react-webpack-babel.git
 ```
 
-* Then install the dependencies:
+- Then install the dependencies:
 
 ```
-yarn install
+npm install
 ```
 
-* Run development server:
+- Run development server:
 
 ```
-yarn start
+npm start
 ```
 
-* Or you can run development server with [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard):
+The app will be available at: http://localhost:8888
+
+- Or you can run development server with [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard):
 
 ```
-yarn dev
+npm run dev
 ```
 
 Open the web browser to `http://localhost:8888/`
@@ -64,20 +66,20 @@ Open the web browser to `http://localhost:8888/`
 To run unit tests:
 
 ```
-yarn test
+npm test
 ```
 
 Tests come bundled with:
 
-* Jest
-* Enzyme
-* React Test Utils
-* React Test Renderer
+- Jest
+- Enzyme
+- React Test Utils
+- React Test Renderer
 
 ### To build the production package
 
 ```
-yarn build
+npm run build
 ```
 
 ### Running build locally
@@ -123,7 +125,7 @@ There is a `.eslintrc` config for eslint ready with React plugin.
 To run linting, run:
 
 ```
-yarn lint
+npm run lint
 ```
 
 ### Prettier
@@ -133,13 +135,13 @@ There is a `.prettierrc` configuration for Prettier.
 To prettify code, run:
 
 ```
-yarn prettify
+npm run prettify
 ```
 
 To test prettier before changing any files, run:
 
 ```
-yarn prettify-test
+npm run prettify-test
 ```
 
 ### Contribute
