@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
-import Navigation from './pages/Navigation'
+import Navigation from './components/Navigation'
 import colors from './colors'
 import theme from './theme'
 
